@@ -4919,28 +4919,28 @@ root.render(/*#__PURE__*/React.createElement(ShiftSwapManager, null));
     
     <script>
         // ⚠️ CONFIGURAZIONE FIREBASE ⚠️
-        const firebaseConfig = {
-  apiKey: "AIzaSyAD13ikUgnixOGroEyP0Cot4sVqcAwGymw",
-  authDomain: "shiftswap-liee.firebaseapp.com",
-  projectId: "shiftswap-liee",
-  storageBucket: "shiftswap-liee.firebasestorage.app",
-  messagingSenderId: "504376872432",
-  appId: "1:504376872432:web:9d1cd59518c0df913f2135",
-  measurementId: "G-D13DNCKE5S"
-};
-        
-        let db = null;
-        let firebaseInitialized = false;
-        
-        try {
-            firebase.initializeApp(firebaseConfig);
-            db = firebase.firestore();
-            firebaseInitialized = true;
-            console.log("✅ Firebase OK");
-        } catch (error) {
-            console.error("❌ Firebase KO", error);
-            alert("Configurare Firebase!");
-        }
+     const firebaseConfig = {
+        apiKey: "AIzaSyAD13ikUgnixOGroEyP0Cot4sVqcAwGymw",
+        authDomain: "shiftswap-liee.firebaseapp.com",
+        projectId: "shiftswap-liee",
+        storageBucket: "shiftswap-liee.firebasestorage.app",
+        messagingSenderId: "504376872432",
+        appId: "1:504376872432:web:9d1cd59518c0df913f2135",
+        measurementId: "G-D13DNCKE5S"
+      };
+
+      let db = null;
+      let firebaseInitialized = false;
+
+      try {
+        firebase.initializeApp(firebaseConfig);
+        db = firebase.firestore();
+        firebaseInitialized = true;
+        console.log("✅ Firebase LIEE OK");
+      } catch (error) {
+        console.error("❌ Firebase LIEE KO", error);
+        alert("Errore configurazione Firebase LIEE");
+      }
     </script>
     
 <script type="text/babel">
